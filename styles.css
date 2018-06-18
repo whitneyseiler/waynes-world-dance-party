@@ -1,0 +1,115 @@
+body {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  background: url(https://fulltimeexplorer.files.wordpress.com/2015/12/full-time-explorer-how-to-get-the-most-out-of-a-nypass-new-york-city-tourism-nyc-snl-exhibit-waynes-world-set-design.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+}
+
+body.with-line-up .danceFloor{
+  height: 250px;
+  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+body, a:link, a:visited, a:active{
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b20000;
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+
+.topbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: black;
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";
+  font-color: white;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;  
+  display: flex; 
+  justify-content: space-between;
+}
+
+.topbar a {
+  padding: 5px 12px;
+}
+
+.topbar .title {
+  display: block;
+  height: 80%;
+  padding: 6px 3px 0 0;
+}
+
+.danceFloor {
+  margin-top: 32px;
+  height: 100%;
+}
+
+audio {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.dancer{
+  position: absolute;
+  border: 0;
+  height: 250px;
+  width: 100px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.dancer.is-garth {
+  background: url(images/garth.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.dancer.is-wayne {
+  background: url(images/wayne.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.dancer.is-dreamWoman {
+  background: url(images/dreamwoman.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 340px;
+}
+
+.dancer.is-selected {
+  margin: 0;
+  border: 20px solid red;
+}
+
+.schwing {
+  position: fixed;
+  top: 300px;
+  left: calc(50% - 400px);
+  width: 800px;
+  height: 100%;
+  background: url(images/shwing.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

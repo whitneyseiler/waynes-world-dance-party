@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Party Time! Excellent!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="lib/jquery.js"></script>
+    <script src="src/dancer.js"></script>
+    <script src="src/blinkyDancer.js"></script>
+    <script src="src/garthDancer.js"></script>
+    <script src="src/wayneDancer.js"></script>
+    <script src="src/dreamWoman.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="leftTopBar">
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeGarthDancer">Party On, Garth!</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeWayneDancer">Party On, Wayne!</a>
+        <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">Party Time</a>
+        <a href="#" class="lineUpButton">Line Up</a>
+        <a href="#" class="clearButton">Clear the Room</a>
+      </div>
+      <img class="title" src='images/Waynes-World.png'>
+    </div>
+    <div class="danceFloor"></div>
+<!--     <audio controls autoplay="true">-->
+    <audio controls>
+      <source src="images/BallroomBlitz.mp3" type="audio/mpeg">
+    </audio>
+    <script src="src/init.js"></script>
+  </body>
+</html>
